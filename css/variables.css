@@ -1,0 +1,52 @@
+/* ============================================================
+   FORNO NERO — DESIGN TOKENS
+   Toda alteração visual do site deve ser possível apenas
+   editando as variáveis abaixo. Nenhuma cor deve ser escrita
+   diretamente nos componentes / seções.
+   ============================================================ */
+
+:root {
+  /* ---- Superfícies ---- */
+  --background:        #0B0908;
+  --background-alt:    #14100D;
+  --surface:            #1C1712;
+  --card-background:    rgba(28, 23, 18, 0.62);
+  --glass-background:   rgba(28, 23, 18, 0.45);
+  --glass-border:       rgba(201, 151, 75, 0.18);
+
+  /* ---- Texto ---- */
+  --text-primary:       #F5ECDF;
+  --text-secondary:     #B7A796;
+  --text-muted:         #7C6F62;
+
+  /* ---- Marca / Identidade ---- */
+  --primary-color:      #7A1F1B;   /* vermelho vinho escuro */
+  --secondary-color:    #C4551C;   /* laranja queimado */
+  --accent:             #C9974B;   /* dourado */
+  --gold:               #D9B274;
+  --ember:              #FF6B35;   /* brilho de brasa, uso pontual */
+  --ember-soft:         rgba(255, 107, 53, 0.35);
+
+  --success:            #5B8266;
+  --warning:            #C9974B;
+  --danger:             #8A2A21;
+
+  /* ---- Botões ---- */
+  --button-primary:     linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  --button-hover:       linear-gradient(135deg, var(--ember), var(--secondary-color));
+  --button-text:        #F5ECDF;
+
+  /* ---- Sombras ---- */
+  --shadow-light:   0 4px 16px rgba(0,0,0,0.25);
+  --shadow-medium:  0 12px 32px rgba(0,0,0,0.40);
+  --shadow-strong:  0 24px 64px rgba(0,0,0,0.55);
+  --shadow-ember:   0 0 40px rgba(255,107,53,0.25);
+
+  /* ---- Tipografia ---- */
+  --font-display: 'Fraunces', serif;
+  --font-body:    'Manrope', sans-serif;
+
+  /* ---- Timing cinematográfico ---- */
+  --ease-cin: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-soft: cubic-bezier(0.16, 1, 0.3, 1);
+}

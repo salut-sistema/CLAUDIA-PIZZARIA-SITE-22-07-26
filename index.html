@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carregando...</title>
+<link rel="icon" href="data:,">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="./assets/gallery/forno-especiais-2.jpg">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="#hero" class="nav-logo" id="navLogo"></a>
+  <ul id="navLinks"></ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ember"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow" id="heroEyebrow"></div>
+    <h1 class="hero-title" id="heroTitle"></h1>
+    <p class="hero-sub" id="heroSub"></p>
+    <a href="#contato" class="hero-cta" id="heroCta"></a>
+  </div>
+</section>
+
+
+<div class="crust-divider" style="--divider-color: var(--background-alt);"></div>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="sobre-img reveal">
+    <img id="sobreImg" src="" alt="Pizza artesanal Forno Nero" loading="lazy">
+  </div>
+  <div class="sobre-text reveal">
+    <div class="divider"></div>
+    <h2 id="sobreTitle"></h2>
+    <p id="sobreP1"></p>
+    <p id="sobreP2"></p>
+    <p id="sobreP3"></p>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section id="diferenciais">
+  <div class="dif-header reveal">
+    <h2 id="difTitle"></h2>
+    <p id="difSubtitle"></p>
+  </div>
+  <div class="dif-grid" id="difGrid"></div>
+</section>
+
+<!-- CARDÁPIO (galeria-estilo) -->
+<section id="cardapio">
+  <div class="galeria-header reveal">
+    <h2 id="cardapioTitle"></h2>
+    <p id="cardapioSubtitle"></p>
+  </div>
+  <div class="galeria-grid" id="galeriaGrid"></div>
+  <div class="promo-banner">
+    <img id="promoImg" src="" alt="" loading="lazy">
+  </div>
+</section>
+
+<!-- DEPOIMENTO / PARALLAX -->
+<section id="depoimentos">
+  <div class="parallax-img" id="parallaxImg"></div>
+  <div class="parallax-text">
+    <blockquote id="depoimentoQuote"></blockquote>
+    <cite id="depoimentoCite"></cite>
+  </div>
+</section>
+
+<!-- CONTATO / PEDIDO -->
+<section id="contato">
+  <div class="form-intro reveal">
+    <h2 id="formTitle"></h2>
+    <p id="formSub1"></p>
+    <p id="formSub2"></p>
+    <div class="detail" id="formHours"></div>
+    <div class="detail" id="formAddress"></div>
+  </div>
+
+  <form id="form-pedido" class="reveal">
+    <div class="form-row">
+      <label id="labelNome">Nome<input type="text" id="f-nome" placeholder="Seu nome completo" required></label>
+      <label id="labelTel">Telefone<input type="tel" id="f-tel" placeholder="(11) 99999-9999" required></label>
+    </div>
+
+    <label id="labelTipoWrap">
+      Tipo de Pedido
+      <div class="tipo-group" id="tipoGroup"></div>
+      <input type="hidden" id="f-tipo" value="">
+    </label>
+
+    <label id="labelSabores">Sabores<input type="text" id="f-sabores" placeholder="ex: Marguerita, Calabresa"></label>
+    <label id="labelEndereco">Endereço<input type="text" id="f-endereco" placeholder="Rua, número, bairro"></label>
+    <label id="labelObs">Observações<textarea id="f-obs" placeholder="Alguma observação especial?"></textarea></label>
+
+    <button type="submit" class="btn-whatsapp" id="btnSubmit"></button>
+  </form>
+</section>
+
+<footer>
+  <div>
+    <div class="footer-brand" id="footerBrand"></div>
+    <p class="footer-sub" id="footerSub"></p>
+    <div class="footer-social" id="footerSocial"></div>
+  </div>
+  <div class="footer-col">
+    <h4>Contato</h4>
+    <ul id="footerContact"></ul>
+  </div>
+  <div class="footer-col">
+    <h4>Horário</h4>
+    <ul id="footerHours"></ul>
+  </div>
+  <div class="footer-bottom">
+    <span id="footerCopy"></span>
+    <span id="footerCraft"></span>
+  </div>
+</footer>
+
+<!-- CONFIG (fonte única de dados) -->
+<script src="js/config/company.js"></script>
+<script src="js/config/menu.js"></script>
+<script src="js/config/social.js"></script>
+<script src="js/config/contact.js"></script>
+<script src="js/config/theme.js"></script>
+<script src="js/config/animations.js"></script>
+
+<!-- CONSTANTS / ENUMS -->
+<script src="js/constants/routes.js"></script>
+<script src="js/constants/icons.js"></script>
+<script src="js/constants/colors.js"></script>
+<script src="js/constants/fonts.js"></script>
+<script src="js/enums/Sections.js"></script>
+<script src="js/enums/Buttons.js"></script>
+<script src="js/enums/Category.js"></script>
+<script src="js/enums/Animation.js"></script>
+
+<!-- APP -->
+<script src="js/main.js"></script>
+</body>
+</html>
