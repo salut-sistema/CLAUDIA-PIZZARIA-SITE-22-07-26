@@ -415,27 +415,20 @@ select option { background: var(--surface); color: var(--text-primary); }
 
 .btn-whatsapp {
   padding: 18px 40px;
-  background: linear-gradient(135deg, #25D366 0%, #1EBE5D 50%, #128C7E 100%);
-  border: none;
-  color: #fff;
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.35s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  letter-spacing: 0.03em;
+  background: var(--button-primary);
+  border: none; color: var(--button-text);
+  font-family: var(--font-display); font-size: 1rem; font-weight: 600;
+  cursor: pointer; transition: transform 0.4s var(--ease-cin), box-shadow 0.4s;
+  display: flex; align-items: center; justify-content: center;
+  gap: 12px; letter-spacing: 0.03em;
   border-radius: 3px;
-  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+  box-shadow: var(--shadow-medium);
 }
-
 .btn-whatsapp:hover {
-  background: linear-gradient(135deg, #2EEA73 0%, #25D366 50%, #18A851 100%);
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+  
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-ember);
+
 }
 .btn-whatsapp svg { flex-shrink: 0; width: 20px; height: 20px; }
 
