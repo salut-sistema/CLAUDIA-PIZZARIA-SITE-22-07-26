@@ -17,8 +17,8 @@ window.CONFIG.company = {
   heroTitle: "Precisão que vira sabor.",
   heroSubtitle:
     "Massa de fermentação lenta, temperatura controlada com precisão e ingredientes escolhidos a dedo. Uma experiência de pizzaria premium, do primeiro cheiro ao último pedaço é só aqui na pizza Prima!",
-
-  phone: "+55 11 98337-6262",
+  telefone:"(11) 3936-1080",
+  phone: "(11) 98337-6262",
   whatsapp: "551198337-6262", // placeholder — substitua pelo número real da pizzaria
   email: "primapizzaeesfiha@gmail.com",
 
