@@ -173,8 +173,9 @@
     `;
 
     document.getElementById("footerContact").innerHTML = `
-      <li>${ICONS.whatsapp}<a href="${C.social.whatsappUrl}" target="_blank" rel="noopener">${C.company.phone}</a></li>
-      <li>${ICONS.location}<a href="${C.company.address.mapsUrl}" target="_blank" rel="noopener">${C.company.address.street}</a></li>
+    <li>${ICONS.whatsapp}<a href="" target="_blank" rel="noopener">${C.company.telefone}</a></li>
+    <li>${ICONS.whatsapp}<a href="${C.social.whatsappUrl}" target="_blank" rel="noopener">${C.company.phone}</a></li>
+    <li>${ICONS.location}<a href="${C.company.address.mapsUrl}" target="_blank" rel="noopener">${C.company.address.street}</a></li>
     `;
 
     document.getElementById("footerHours").innerHTML = C.company.hours
@@ -257,7 +258,7 @@
         endereco,
         obs
       });
-
+      
       const url = `https://wa.me/${C.company.whatsapp}?text=${encodeURIComponent(msg)}`;
       window.open(url, "_blank");
     });
