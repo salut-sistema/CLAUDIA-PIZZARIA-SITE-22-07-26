@@ -1,39 +1,45 @@
+
+---
+
 CONTRATO DE PRESTAÇÃO DE SERVIÇOS PARA DESENVOLVIMENTO DE SITE
 
 CONTRATANTE: ____________________________________________
 
 CONTRATADO: ____________________________________________
 
-As partes acima identificadas acordam a prestação de serviços para desenvolvimento de um site, conforme as condições abaixo:
+As partes acima identificadas celebram o presente Contrato de Prestação de Serviços para Desenvolvimento de Site, mediante as cláusulas e condições abaixo.
 
 1. Objeto
 
 O presente contrato tem por objeto o desenvolvimento de um site para pizzaria, contendo:
 
-Menu superior com 4 opções de navegação internas no site e 1 opção direcionada ao cardápio online, totalizando 5 opções de navegação;
-Formulário de pedido contendo:
-Nome;
-Endereço;
-Tipo de entrega (Entrega ou Retirada);
-Sabor desejado;
-Campo de observações;
-Informações da empresa;
-Botão para envio do pedido via WhatsApp;
-Integração com os seguintes links:
-Facebook;
-Instagram;
-WhatsApp;
-Localização (Google Maps);
-Cardápio/Loja;
-Inserção de:
-7 imagens da empresa;
-1 imagem promocional;
-2 imagens de fundo;
-Inserção do logotipo da empresa como ícone exibido na aba do navegador (favicon).
+* Menu superior com 4 opções de navegação internas no site e 1 opção direcionada ao cardápio online, totalizando 5 opções de navegação;
+* Formulário de pedido contendo:
+
+  * Nome;
+  * Endereço;
+  * Tipo de entrega (Entrega ou Retirada);
+  * Sabor desejado;
+  * Campo de observações;
+* Informações da empresa;
+* Botão para envio do pedido via WhatsApp;
+* Integração com os seguintes links:
+
+  * Facebook;
+  * Instagram;
+  * WhatsApp;
+  * Localização (Google Maps);
+  * Cardápio/Loja;
+* Inserção de:
+
+  * 7 imagens da empresa;
+  * 1 imagem promocional;
+  * 2 imagens de fundo;
+* Inserção do logotipo da empresa como ícone exibido na aba do navegador (favicon).
 
 O modelo do site foi previamente apresentado, aprovado e acordado entre as partes.
 
-2. Valor
+1. Valor
 
 O valor para desenvolvimento e implementação do site é de:
 
@@ -41,11 +47,11 @@ R$ 450,00 (quatrocentos e cinquenta reais).
 
 Este valor inclui:
 
-Desenvolvimento do site;
-Publicação do site;
-Configuração do domínio.
+* Desenvolvimento do site;
+* Publicação do site;
+* Configuração do domínio.
 
-O domínio permanecerá registrado e administrado pelo contratado, sendo utilizado exclusivamente para o funcionamento do site da contratante enquanto os serviços permanecerem ativos e as mensalidades estiverem em dia.
+O domínio permanecerá registrado e administrado pelo contratado, sendo utilizado exclusivamente para o funcionamento do site da contratante enquanto os serviços permanecerem ativos e as mensalidades estiverem devidamente quitadas.
 
 3. Manutenção
 
@@ -53,30 +59,33 @@ Após a entrega do projeto, será cobrada uma mensalidade de:
 
 R$ 100,00 (cem reais) por mês, enquanto o site permanecer ativo.
 
-O valor da mensalidade sofrerá reajuste anual de 20%, contado a partir da data da contratação.
+O valor da mensalidade sofrerá reajuste anual de 20%, contado a partir da data da contratação, ou poderá ser reajustado em caso de aumento dos custos de hospedagem, registro ou renovação do domínio, ou demais serviços indispensáveis para a manutenção do site.
 
 A manutenção contempla:
 
-Hospedagem do site;
-Funcionamento do site;
-Administração do domínio;
-Disponibilidade do serviço.
+* Hospedagem do site;
+* Funcionamento do site;
+* Administração do domínio;
+
+
 4. Alterações
 
 Alterações solicitadas após a entrega do site não fazem parte do valor contratado para o desenvolvimento.
 
-Serão cobradas a partir de R$ 50,00 por edição, incluindo, por exemplo:
+Serão cobradas a partir de R$ 50,00 (cinquenta reais) por edição, incluindo, por exemplo:
 
-Troca de uma imagem;
-Alteração de um texto;
-Alteração de um link de navegação existente;
-Pequenas modificações.
+* Troca de uma imagem;
+* Alteração de um texto;
+* Alteração de um link de navegação existente;
+* Pequenas modificações.
 
 Caso a solicitação envolva grande volume de informações, novas páginas ou alterações mais complexas, será apresentado orçamento específico para aprovação da contratante.
 
 5. Entrega
 
-O serviço será considerado entregue após a publicação do site e seu funcionamento conforme as especificações descritas neste contrato.
+O serviço será considerado entregue após a publicação do site e seu pleno funcionamento, conforme as especificações descritas neste contrato.
+
+A contratante declara que realizou a análise do site, verificando suas informações, links, formulários, botões e demais funcionalidades, confirmando que o projeto foi entregue conforme o modelo previamente aprovado e encontra-se em pleno funcionamento, sem ressalvas quanto aos itens contratados.
 
 6. Divulgação
 
@@ -84,7 +93,9 @@ A contratante autoriza o contratado a divulgar o nome da empresa, imagens do pro
 
 7. Disposições Finais
 
-Após a entrega do site, quaisquer funcionalidades, integrações ou recursos não previstos neste contrato serão considerados novos serviços e poderão ser orçados separadamente.
+Após a entrega do site, quaisquer funcionalidades, integrações, páginas, recursos ou serviços não previstos neste contrato serão considerados novos serviços e poderão ser orçados separadamente.
+
+Em caso de inadimplência superior a 30 (trinta) dias, o contratado poderá suspender temporariamente o funcionamento do site, da hospedagem, do domínio e dos demais serviços vinculados até a regularização dos pagamentos pendentes, sem que isso gere qualquer obrigação de indenização por parte do contratado.
 
 Local e Data: _______________________________________
 
