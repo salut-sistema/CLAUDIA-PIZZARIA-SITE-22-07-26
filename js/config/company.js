@@ -29,9 +29,9 @@ window.CONFIG.company = {
   },
 
   hours: [
-    { dias: "Segunda a Sexta", horario: "18h00 — 23h30" },
-    { dias: "Sábado e Domingo", horario: "18h00 — 00h00" },
-    { dias: "feriados", horario: "fechados" }
+    { dias: "domingo Terça Quarta quinta", horario: "18h00 — 23h30" },
+    { dias: "sexta e sábado", horario: "18h00 — 00h30" },
+    { dias: "segunda", horario: "fechado" }
   ],
 
   seo: {
