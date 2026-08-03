@@ -183,7 +183,7 @@
       .join("");
 
     document.getElementById("footerCopy").textContent =
-      `© ${new Date().getFullYear()} ${C.company.name}. Todos os direitos reservados.`;
+      `© ${new Date().getFullYear()} ${C.company.direitorfooter}. Todos os direitos reservados.`;
     document.getElementById("footerCraft").textContent = "Feito para você!";
   }
 

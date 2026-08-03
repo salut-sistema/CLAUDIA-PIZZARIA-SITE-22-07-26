@@ -9,6 +9,7 @@ window.CONFIG = window.CONFIG || {};
 
 window.CONFIG.company = {
   name: "Pizza Prima",
+  direitorfooter: "pizzariaprimapizzaepastel",
   tagline: "Pizzaria Premium",
   logoText: "Pizza ",
   logoAccent: "Prima",
