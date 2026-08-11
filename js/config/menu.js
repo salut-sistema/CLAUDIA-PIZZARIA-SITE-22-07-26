@@ -15,7 +15,7 @@ window.CONFIG.menu = {
           nome: "Marguerita",
           descricao: "Molho de tomate, mussarela, tomate fatiado, parmesão, manjericão, orégano e azeitonas",
           preco: "R$ 51,50",
-          imagem: "assets/gallery/forno-especiais-2.jpg"
+          imagem: "assets/gallery/forno-especiais-2.png"
         }
       ]
     },
