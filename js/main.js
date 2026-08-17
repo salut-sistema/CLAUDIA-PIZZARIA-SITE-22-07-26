@@ -48,20 +48,20 @@
     document.getElementById("sobreTitle").innerHTML =
       `O fogo que<br><em>não engana</em>`;
     document.getElementById("sobreP1").textContent =
-      "Desde 1996, a PIZZA PRIMA tem um compromisso: fazer pizza com respeito pelo tempo. A massa descansa por 48 horas antes de qualquer coisa. Fermentação lenta, sabor que não se apressa.";
+      "Desde 1996, a Pizza Prima faz parte da história de quem valoriza uma boa pizza. Ao longo dos anos, construímos nossa trajetória com base em três pilares: qualidade, sabor e dedicação em cada preparo.";
     document.getElementById("sobreP2").textContent =
-      "O controle da temperatura é essêncial para o forno chegar a 400°C. É esse calor intenso, quase teimoso, que dá à borda a textura certa: crocante fora, macia dentro.";
+      "Da escolha dos ingredientes à combinação de cada receita, tudo é pensado para proporcionar uma experiência que vai além da refeição. Pizzas e pastéis preparados com cuidado, sabores marcantes e a qualidade que conquistamos ao longo de décadas.";
     document.getElementById("sobreP3").textContent =
-      "Ingredientes selecionados e generosos, sem economizar no recheio — porque pizza boa se sente em cada mordida.";
+      "Pizza Prima. Desde 1996, fazendo parte dos seus melhores momentos.";
   }
 
   /* ============================================================
      RENDER: diferenciais
      ============================================================ */
   const DIFERENCIAIS = [
-    { icon: "oven", title: "Controle de temperatura", desc: "Calor real, sabor defumado que nenhum forno elétrico reproduz." },
+    { icon: "oven", title: "Controle de temperatura", desc: "Calor preciso, assado uniforme e o sabor irresistível de uma pizza feita para chegar perfeita à sua mesa." },
     { icon: "ingredients", title: "Ingredientes Frescos", desc: "Selecionados diariamente, sem atalhos." },
-    { icon: "delivery", title: "Entrega Rápida", desc: "Sai do forno e chega até você ainda quente, sem perder a alma." },
+    { icon: "delivery", title: "Entrega Rápida", desc: "Sai do forno e chega até você ainda quente, rápido e cheia de sabor." },
     { icon: "chef", title: "Atendimento Premium", desc: "Uma experiência pensada do primeiro contato ao último pedaço." }
   ];
 
@@ -197,6 +197,40 @@
     });
   }
 
+  function setupNavToggle() {
+    const toggle = document.getElementById("navToggle");
+    const links = document.getElementById("navLinks");
+    const overlay = document.getElementById("navOverlay");
+    if (!toggle || !links) return;
+
+    function closeMenu() {
+      links.classList.remove("open");
+      toggle.classList.remove("active");
+      toggle.setAttribute("aria-expanded", "false");
+      if (overlay) overlay.classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    function openMenu() {
+      links.classList.add("open");
+      toggle.classList.add("active");
+      toggle.setAttribute("aria-expanded", "true");
+      if (overlay) overlay.classList.add("open");
+      document.body.style.overflow = "hidden";
+    }
+
+    toggle.addEventListener("click", () => {
+      const isOpen = links.classList.contains("open");
+      isOpen ? closeMenu() : openMenu();
+    });
+
+    if (overlay) overlay.addEventListener("click", closeMenu);
+    links.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) closeMenu();
+    });
+  }
+
   function setupReveal() {
     const items = document.querySelectorAll(".reveal");
     const observer = new IntersectionObserver(
@@ -258,7 +292,7 @@
         endereco,
         obs
       });
-      
+
       const url = `https://wa.me/${C.company.whatsapp}?text=${encodeURIComponent(msg)}`;
       window.open(url, "_blank");
     });
@@ -278,6 +312,7 @@
     renderFooter();
 
     setupNavScroll();
+    setupNavToggle();
     setupReveal();
     setupParallax();
     setupTipoButtons();

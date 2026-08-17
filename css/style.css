@@ -56,6 +56,35 @@ nav ul a {
 }
 nav ul a:hover { opacity: 1; color: var(--gold); }
 
+/* ── NAV: mobile hamburger toggle ── */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 36px; height: 36px;
+  background: none; border: none; cursor: pointer;
+  z-index: 101; padding: 0;
+}
+.nav-toggle span {
+  display: block; width: 22px; height: 2px;
+  background: var(--text-primary);
+  transition: transform 0.3s var(--ease-cin), opacity 0.3s;
+}
+.nav-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.active span:nth-child(2) { opacity: 0; }
+.nav-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.nav-overlay {
+  position: fixed; inset: 0;
+  background: rgba(11,9,8,0.6);
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.35s;
+  z-index: 99;
+}
+.nav-overlay.open { opacity: 1; pointer-events: auto; }
+
 /* ── HERO ── */
 #hero {
   position: relative; height: 100vh; overflow: hidden;
@@ -491,7 +520,22 @@ footer {
 }
 @media (max-width: 768px) {
   nav { padding: 20px 24px; }
-  nav ul { display: none; }
+  .nav-toggle { display: flex; }
+  nav ul {
+    display: flex; flex-direction: column;
+    position: fixed; top: 0; right: 0;
+    height: 100vh; width: min(78vw, 320px);
+    background: rgba(11,9,8,0.97);
+    backdrop-filter: blur(16px);
+    padding: 110px 36px 40px;
+    gap: 30px;
+    transform: translateX(100%);
+    transition: transform 0.4s var(--ease-cin);
+    box-shadow: -12px 0 40px rgba(0,0,0,0.45);
+    z-index: 100;
+  }
+  nav ul.open { transform: translateX(0); }
+  nav ul a { font-size: 0.95rem; letter-spacing: 0.1em; }
   .hero-content { padding: 0 24px 60px; }
   #sobre, #contato { grid-template-columns: 1fr; padding: 80px 24px; gap: 60px; }
   #cardapio, #diferenciais { padding: 80px 24px; }
@@ -501,6 +545,11 @@ footer {
   .dif-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   footer { padding: 60px 24px; }
+
+  /* a seção de depoimento usava 60vh fixo, o que sobrava
+     como espaço vazio grande abaixo da citação no mobile */
+  #depoimentos { height: auto; min-height: 0; }
+  .parallax-text { padding: 90px 24px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

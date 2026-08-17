@@ -16,8 +16,7 @@ window.CONFIG.company = {
   description:
     "Pizzas artesanais assadas em temperatura controlada, com ingredientes selecionados e o fogo como protagonista de cada receita.",
   heroTitle: "Precisão que vira sabor.",
-  heroSubtitle:
-    "Massa de fermentação lenta, temperatura controlada com precisão e ingredientes escolhidos a dedo. Uma experiência de pizzaria premium, do primeiro cheiro ao último pedaço é só aqui na pizza Prima!",
+  heroSubtitle:"O sabor tradicional que conquista em cada pedaço. Pizzas e pastéis preparados com ingredientes selecionados, massa saborosa e aquele toque especial que faz você voltar. Pizza Prima: sabor de verdade, do jeito que você gosta.",
   telefone:"(11) 3936-1080",
   phone: "(11) 98337-6262",
   whatsapp: "551198337-6262", // placeholder — substitua pelo número real da pizzaria
